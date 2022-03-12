@@ -1,6 +1,6 @@
 .card {
   display: grid;
-  width: fit-content;
+  width: 20rem;
   margin: 2rem;
   position: relative;
   grid-template-columns: 1fr;
@@ -12,6 +12,7 @@
   object-fit: contain;
   border-radius: 10px 10px 0 0;
   clip-path: polygon(0 0, 0 90%, 100% 100%, 100% 0);
+  width: 100%;
 }
 
 .movie_details {

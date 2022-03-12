@@ -1,16 +1,12 @@
 import style from "./MovieCard.module.scss";
-function Movie() {
+function Movie({ movie }) {
   return (
     <div className={style.card}>
-      <img
-        className={style.poster}
-        src="https://m.media-amazon.com/images/M/MV5BOTAzODEzNDAzMl5BMl5BanBnXkFtZTgwMDU1MTgzNzE@._V1_SX300.jpg"
-        alt=""
-      />
+      <img className={style.poster} src={movie.poster} alt="" />
       <section className={style.movie_details}>
-        <h4>title</h4>
-        <h4>Cinema World:$ </h4>
-        <h4>Film World:$ </h4>
+        <h4>{movie.title}</h4>
+        <h4>Cinema World:$ {movie.cwPrice} </h4>
+        <h4>Film World:$ {movie.fwPrice} </h4>
       </section>
     </div>
   );
