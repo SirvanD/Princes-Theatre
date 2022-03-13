@@ -4,7 +4,7 @@ import { useEffect, useState } from "react";
 import style from "./MovieList.module.scss";
 
 function MovieList() {
-  const [movies, setMovies] = useState();
+  const [movies, setMovies] = useState(null);
 
   const getMoviesData = async () => {
     let response = await getData();
@@ -15,9 +15,9 @@ function MovieList() {
     getMoviesData();
   }, []);
 
-  console.log(movies);
   return (
     <section className={style.movies_container}>
+      {!movies && <span>loading movies...</span>}
       {movies &&
         movies.map((movie, key) => {
           return <MovieCard movie={movie} key={key} />;

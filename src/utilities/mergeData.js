@@ -8,8 +8,8 @@ const getMovies = (fwMovies, cwMovies) => {
           id: fwMovie.ID,
           title: fwMovie.Title,
           poster: fwMovie.Poster,
-          fwPrice: fwMovie.Price,
-          cwPrice: cwMovie.Price,
+          fwPrice: fwMovie.Price.toFixed(2),
+          cwPrice: cwMovie.Price.toFixed(2),
         });
         break;
       }
