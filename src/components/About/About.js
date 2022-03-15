@@ -1,13 +1,12 @@
+import style from "./About.module.scss";
 function About() {
   return (
-    <div>
+    <div className={style.description}>
+      <h4 className={style.subtitle}>Streaming services at the best value</h4>
       <p>
-        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nostrum
-        aspernatur alias enim placeat, repellat animi voluptas repudiandae unde
-        vel recusandae facilis inventore nihil porro ipsum illum vero possimus
-        numquam dolorem.
+        We are committed to bring to you the most popular Star Wars titles at
+        the best value to stream at your convenience.
       </p>
-      About
     </div>
   );
 }

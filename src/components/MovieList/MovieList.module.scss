@@ -1,6 +1,17 @@
-.movies_container {
-  width: 100vw;
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr 1fr;
-  justify-content: space-evenly;
+@media only screen and (min-width: 992px) {
+  .movies_container {
+    width: 100vw;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-evenly;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .movies_container {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
+  }
 }

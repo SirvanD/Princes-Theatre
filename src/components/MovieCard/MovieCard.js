@@ -1,12 +1,12 @@
 import style from "./MovieCard.module.scss";
+import MoviePrice from "./MoviePrice";
 function Movie({ movie }) {
   return (
     <div className={style.card}>
       <img className={style.poster} src={movie.poster} alt="" />
       <section className={style.movie_details}>
         <h4>{movie.title}</h4>
-        <h4>Cinema World:${movie.cwPrice} </h4>
-        <h4>Film World:${movie.fwPrice} </h4>
+        <MoviePrice fwPrice={movie.fwPrice} cwPrice={movie.cwPrice} />
       </section>
     </div>
   );

@@ -1,8 +1,9 @@
+import style from "./Header.module.scss";
 function NavBar() {
   return (
     <div>
       <nav>
-        <h2>Prince's Theatre</h2>
+        <h1 className={style.title}>Prince's Theatre</h1>
       </nav>
     </div>
   );

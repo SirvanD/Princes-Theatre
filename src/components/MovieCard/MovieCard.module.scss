@@ -6,6 +6,7 @@
   grid-template-columns: 1fr;
   background-color: rgb(114, 114, 114);
   border-radius: 10px;
+  box-shadow: 0 0 10px grey;
 }
 
 .poster {
@@ -22,5 +23,14 @@
 
   h4 {
     margin: 0.5rem;
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .description {
+    display: grid;
+    justify-content: center;
+    align-items: flex-start;
+    width: 100vw;
   }
 }
