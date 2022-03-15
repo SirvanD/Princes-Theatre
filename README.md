@@ -4,17 +4,17 @@ Prince's Theatre is a simple objective oriented application where it helps users
 
 ## Tech stack
 
--React <br/>
--Sass for CSS <br/>
--Axios for API calls
+- React <br/>
+- Sass for CSS <br/>
+- Axios for API calls
 
 ## Instruction: How to run and test
 
-### Clone the project by `git clone https://github.com/ertemishakk/PrincesTheater.git` <br/>
+- Clone the project by `git clone https://github.com/ertemishakk/PrincesTheater.git` <br/>
 
-### To install dependencies run `npm install`
+- To install dependencies run `npm install`
 
-### To test the application run `npm run test`
+- To test the application run `npm run test`
 
 ## Architecture and wireframe
 
