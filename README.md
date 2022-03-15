@@ -14,6 +14,8 @@ Prince's Theatre is a simple objective oriented application where it helps users
 
 - To install dependencies run `npm install`
 
+- To run the application run `npm start`
+
 - To test the application run `npm run test`
 
 ## Architecture and wireframe
@@ -25,5 +27,13 @@ Furthermore, a simple wireframe has initially been designed for more understandi
 ![Screenshot](public/wireframe.png)
 
 ## Testing and test cases
+![Screenshot](public/UnitTest.png)
+
+Following Unit tests have been conducted using Integrated React Testing Library:
+- Component Header has been Tested with it's textcontent for protection against manipulation.
+- Component About has been rendered with it's two child components of subtitle and content.
+- Component Movie Card is more extensively tested with mock props, to ensure movie title and poster are correctly rendered. 
+- Component Movie Price given mock inputs is tested to ensure less expensive fare is highlighted and the other one is not. 
+
 
 ## Assumptions and decision trade-offs
