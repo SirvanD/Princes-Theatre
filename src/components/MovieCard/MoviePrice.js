@@ -4,21 +4,26 @@ import style from "./MovieCard.module.scss";
 function MoviePrice({ fwPrice, cwPrice }) {
   return (
     <div>
-      {fwPrice < cwPrice ? (
-        <section>
-          <p>
-            Film Word:$<span className={style.highlight}>{fwPrice}</span>
-          </p>
-          <p>Cinema World:${cwPrice}</p>
-        </section>
-      ) : (
-        <section>
-          <p>Film Word:${fwPrice}</p>
-          <p>
-            Cinema World:$<span className={style.highlight}>{cwPrice}</span>
-          </p>
-        </section>
-      )}
+      <section>
+        <p data-testid="FilmWorld">
+          Film World:{" "}
+          <span
+            data-testid="FilmWorldPrice"
+            className={fwPrice < cwPrice ? style.highlight : ""}
+          >
+            ${fwPrice}
+          </span>
+        </p>
+        <p data-testid="CinemaWorld">
+          Cinema World:{" "}
+          <span
+            data-testid="CinemaWorldPrice"
+            className={cwPrice < fwPrice ? style.highlight : ""}
+          >
+            ${cwPrice}
+          </span>
+        </p>
+      </section>
     </div>
   );
 }

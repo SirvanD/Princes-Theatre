@@ -1,16 +1,15 @@
 import MoviePrice from "./MoviePrice";
-import MovieTitle from "./MovieTitle";
-import MoviePoster from "./MoviePoster";
 
 import style from "./MovieCard.module.scss";
 
 function Movie({ movie }) {
+  const { title, poster, fwPrice, cwPrice } = movie;
   return (
     <div className={style.card}>
-      <MoviePoster poster={movie.poster} title={movie.title} />
+      <img className={style.poster} src={poster} alt={title} />
       <section className={style.movie_details}>
-        <MovieTitle title={movie.title} />
-        <MoviePrice fwPrice={movie.fwPrice} cwPrice={movie.cwPrice} />
+        <h4 data-testid="title">{title}</h4>
+        <MoviePrice fwPrice={fwPrice} cwPrice={cwPrice} />
       </section>
     </div>
   );
