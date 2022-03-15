@@ -2,8 +2,17 @@
   .movies_container {
     width: 100vw;
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 1rem;
     justify-content: space-evenly;
+    margin-top: 4rem;
+  }
+  .loading {
+    font-size: 2rem;
+    width: 100vw;
+    display: flex;
+    justify-content: center;
+    margin-top: 20rem;
   }
 }
 

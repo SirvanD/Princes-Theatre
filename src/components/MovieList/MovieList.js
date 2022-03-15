@@ -17,7 +17,11 @@ function MovieList() {
 
   return (
     <section className={style.movies_container}>
-      {!movies && <span data-testid="loading">loading movies...</span>}
+      {!movies && (
+        <span data-testid="loading" className={style.loading}>
+          loading movies...
+        </span>
+      )}
       {movies &&
         movies.map((movie, key) => {
           return <MovieCard movie={movie} key={key} />;

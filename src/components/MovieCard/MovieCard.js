@@ -1,11 +1,15 @@
-import style from "./MovieCard.module.scss";
 import MoviePrice from "./MoviePrice";
+import MovieTitle from "./MovieTitle";
+import MoviePoster from "./MoviePoster";
+
+import style from "./MovieCard.module.scss";
+
 function Movie({ movie }) {
   return (
     <div className={style.card}>
-      <img className={style.poster} src={movie.poster} alt="" />
+      <MoviePoster poster={movie.poster} title={movie.title} />
       <section className={style.movie_details}>
-        <h4>{movie.title}</h4>
+        <MovieTitle title={movie.title} />
         <MoviePrice fwPrice={movie.fwPrice} cwPrice={movie.cwPrice} />
       </section>
     </div>
