@@ -20,7 +20,7 @@ describe("MoviePrice", () => {
     );
   });
 
-  it("should highlight filmworld price as the lowest", () => {
+  it("should highlight film world price as the lowest and Cinema World rendered not highlighted", () => {
     render(
       <MoviePrice fwPrice={testProps.fwPrice} cwPrice={testProps.cwPrice} />
     );
