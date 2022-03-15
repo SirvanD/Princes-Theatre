@@ -1,6 +1,10 @@
 ## Context: About Prince's Theatre
 
+#### <a href="https://princes-theatre-zeta.vercel.app/">Live Demo</a>
+
 Prince's Theatre is a simple objective oriented application where it helps users to choose the best streaming provider for playing their favorite star wars title at the best value possible. The application is taking advantage of an API that provides a number of popular star wars titles along with their details including 2 different fees for Cinema World and Film World streaming providers. The lower price tag is indicated by a yellow background and is recommended to users.
+
+![Screenshot](public/PTSS.png)
 
 ## Tech stack
 
