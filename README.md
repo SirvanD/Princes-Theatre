@@ -7,8 +7,9 @@ Prince's Theatre is a simple objective oriented application where it helps users
 - React <br/>
 - Sass for CSS <br/>
 - Axios for API calls
+- React Testing Library for unit testing
 
-## Instruction: How to run and test
+## Instruction: How to run, install and test
 
 - Clone the project by `git clone https://github.com/SirvanD/Princes-Theatre.git` <br/>
 
@@ -37,3 +38,6 @@ Following Unit tests have been conducted using Integrated React Testing Library:
 
 
 ## Assumptions and decision trade-offs
+
+As I was advised the API is returning inconsistent information, in that, an approach has to be taken in which the end user is still viewing information. To tackle the reliability issue, the API call is retried in case of a failure up to 15 times, which in trade off, can be adding an extra time to loading the data. Hence, a messsage has been implemented to be shown to users in between calling the API and successfully fetching the data. 
+React Component unit testing was a new topic to me, hence learning and implementing the tests was at the same time a pleasant experience and a time-consuming one. I think to desing an integration test for the API calling componet using axiosmock would be a good next step. 
