@@ -1,6 +1,8 @@
-import MovieCard from "../MovieCard/MovieCard";
-import getData from "../../utilities/getData";
 import { useEffect, useState } from "react";
+
+import getData from "../../utilities/getData";
+import MovieCard from "../MovieCard/MovieCard";
+
 import style from "./MovieList.module.scss";
 
 function MovieList() {

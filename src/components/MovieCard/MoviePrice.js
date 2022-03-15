@@ -1,4 +1,5 @@
 import React from "react";
+
 import style from "./MovieCard.module.scss";
 
 function MoviePrice({ fwPrice, cwPrice }) {
