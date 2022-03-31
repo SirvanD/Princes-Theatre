@@ -1,5 +1,7 @@
 import axios from "axios";
 
+import getRate from "./getRate";
+
 import moviesData from "./mergeData";
 
 const api = axios.create({
@@ -38,7 +40,9 @@ const getData = async () => {
     alert(err);
   });
 
-  const movies = moviesData(fwResponse, cwResponse);
+  let AUDRate = await getRate();
+
+  const movies = moviesData(fwResponse, cwResponse, AUDRate);
 
   return movies;
 };

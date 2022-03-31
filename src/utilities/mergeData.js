@@ -1,6 +1,8 @@
-const getMovies = (fwMovies, cwMovies) => {
+const getMovies = (fwMovies, cwMovies, AUDRate) => {
   let moviesData = { movies: [] };
 
+  console.log(AUDRate);
+  console.log(typeof AUDRate);
   for (let fwMovie of fwMovies) {
     for (let cwMovie of cwMovies) {
       if (fwMovie.Title === cwMovie.Title) {
@@ -8,7 +10,7 @@ const getMovies = (fwMovies, cwMovies) => {
           id: fwMovie.ID,
           title: fwMovie.Title,
           poster: fwMovie.Poster,
-          fwPrice: fwMovie.Price.toFixed(2),
+          fwPrice: (fwMovie.Price * parseFloat(AUDRate)).toFixed(2),
           cwPrice: cwMovie.Price.toFixed(2),
         });
         break;
