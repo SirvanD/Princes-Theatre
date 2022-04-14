@@ -2,7 +2,7 @@ import axios from "axios";
 
 let AURate;
 //call API
-//test 7
+//test 8
 export default async function main() {
   const api = axios.create({
     baseURL: "https://challenge.lexicondigital.com.au/api/exchangerate/usd",
