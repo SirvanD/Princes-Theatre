@@ -41,6 +41,7 @@ const getData = async () => {
   });
 
   let AUDRate = await getRate();
+  
 
   const movies = moviesData(fwResponse, cwResponse, AUDRate);
 
