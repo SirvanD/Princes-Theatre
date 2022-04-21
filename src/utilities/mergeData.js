@@ -1,6 +1,6 @@
 const getMovies = (fwMovies, cwMovies, AUDRate) => {
   let moviesData = { movies: [] };
-
+  //commenting started
   console.log(AUDRate);
   console.log(typeof AUDRate);
   for (let fwMovie of fwMovies) {
